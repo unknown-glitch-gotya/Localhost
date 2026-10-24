@@ -1,0 +1,16 @@
+Employee_ID,Employee_Name,Gender,Age,Department,Designation,Employment_Type,Salary,Experience,Performance,Training_Hours,Location
+101, Amit Sharma ,Male,26.0,Information Technology,Software Engineer,Full-Time,520000.0,2.0,3.8,35,Mumbai
+102,Pooja Patil ,female,34.0,Human Resources,HR Executive,Full-Time,480000.0,6.0,4.2,20,Pune
+103, Rahul Verma,M,,IT,Data Analyst,Contract,,4.0,3.5,45,Mumbai
+104,Sneha Kulkarni,Female,29.0,Finance,Accountant,Full-Time,620000.0,,,15,
+105, Rohan Joshi ,male,45.0,Human Resources,HR Manager,Full-Time,890000.0,15.0,4.7,55,Bangalore
+106,Priya Deshmukh,F,38.0,IT,Senior Developer,Full-Time,950000.0,10.0,4.5,60,Pune
+107,Vikram Singh,Male,,Marketing,Marketing Lead,Contract,580000.0,3.0,3.2,25,Mumbai
+108, Ananya Sen ,Female,24.0,Information Technology,Junior Analyst,Part-Time,,1.0,2.9,40,Bangalore
+109,Karan Mehta,M,42.0,Finance,Finance Manager,Full-Time,920000.0,,4.6,50,
+110,Neha Roy,female,31.0,HR,HR Associate,Full-Time,450000.0,4.0,,30,Pune
+101, Amit Sharma ,Male,26.0,Information Technology,Software Engineer,Full-Time,520000.0,2.0,3.8,35,Mumbai
+111,Deepak Kumar,Male,36.0,IT,DevOps Engineer,Full-Time,780000.0,8.0,4.0,42,Bangalore
+112,Sunita Rao,F,48.0,HR,HR Lead,Full-Time,840000.0,14.0,4.4,58,Mumbai
+113,Arjun Kapoor,M,28.0,Marketing,Marketing Analyst,Part-Time,420000.0,2.0,3.1,18,Pune
+114,Meera Nair,Female,,Finance,Financial Analyst,Contract,680000.0,5.0,3.7,32,Mumbai
