@@ -196,8 +196,6 @@ if technique == "Home":
 
 elif technique == "Pract 4: Cleaning":
 
-    st.header("🧹 Pract 4: Cleaning")
-
     st.write(
         """
         Data preprocessing and cleaning prepare raw, noisy, or incomplete datasets for effective
@@ -268,8 +266,6 @@ Processed dataset saved as data/Employee_Analytics_Processed.csv""",
 # =========================================================
 
 elif technique == "Pract 5: Visualization":
-
-    st.header("📊 Pract 5: Visualization")
 
     st.write(
         """
