@@ -93,33 +93,32 @@ st.markdown(
 
 
 # =========================================================
-# PROJECT TITLE
-# =========================================================
-
-st.title("🎓 Student Intelligence and Learning Analytics System")
-
-st.write(
-    """
-    This project demonstrates different Data Mining techniques
-    using student academic, learning, feedback, web, multimedia
-    and spatial data.
-    """
-)
-
-
-# =========================================================
 # SIDEBAR
 # =========================================================
 
 st.sidebar.title("📊 Data Mining Techniques")
+
+daa_techniques = [
+    "Time Complexity (Step Counting)",
+    "Sorting Algorithms (Bubble, Insertion, Merge)",
+    "Singly Linked List Operations",
+    "Circular Linked List Operations",
+    "Stack & Tower of Hanoi",
+    "Balanced Parentheses Checker",
+    "Queue Operations (Array, Circular, Deque)",
+    "Graph Representation & Traversals (DFS/BFS)",
+    "Dijkstra's Shortest Path Algorithm",
+    "Searching Techniques (Linear, Binary, Interpolation)",
+    "AVL Tree Implementation & Rotations"
+]
 
 technique = st.sidebar.selectbox(
     "Select Technique",
     [
         "Home",
         # Data Mining
-        "Practical 4: Data Preprocessing and Cleaning",
-        "Practical 5: Data Discretization and Visualization",
+        "Pract 4: Cleaning",
+        "Pract 5: Visualization",
         "ID3",
         "J48",
         "Naive Bayes",
@@ -132,19 +131,25 @@ technique = st.sidebar.selectbox(
         "Multimedia Mining",
         "Spatial Mining",
         # DAA Practicals
-        "DAA Practical 1: Time Complexity (Step Counting)",
-        "DAA Practical 2: Sorting Algorithms (Bubble, Insertion, Merge)",
-        "DAA Practical 3: Singly Linked List Operations",
-        "DAA Practical 4: Circular Linked List Operations",
-        "DAA Practical 5: Stack & Tower of Hanoi",
-        "DAA Practical 6: Balanced Parentheses Checker",
-        "DAA Practical 7: Queue Operations (Array, Circular, Deque)",
-        "DAA Practical 8: Graph Representation & Traversals (DFS/BFS)",
-        "DAA Practical 9: Dijkstra's Shortest Path Algorithm",
-        "DAA Practical 10: Searching Techniques (Linear, Binary, Interpolation)",
-        "DAA Practical 11: AVL Tree Implementation & Rotations"
+        *daa_techniques
     ]
 )
+
+
+# =========================================================
+# PROJECT TITLE (Show for Home and Data Mining only)
+# =========================================================
+
+if technique not in daa_techniques:
+    st.title("🎓 Student Intelligence and Learning Analytics System")
+
+    st.write(
+        """
+        This project demonstrates different Data Mining techniques
+        using student academic, learning, feedback, web, multimedia
+        and spatial data.
+        """
+    )
 
 
 # =========================================================
@@ -184,35 +189,17 @@ if technique == "Home":
         st.info("📍 **Spatial Mining**\n\nGeographical Analysis\n\n*Concept: Area Coordinates*")
 
     st.subheader("⚡ 2. Design & Analysis of Algorithms (DAA) Practicals")
-
-    dcol1, dcol2, dcol3 = st.columns(3)
-
-    with dcol1:
-        st.success("⏱️ **Practical 1**\n\nTime Complexity Calculation\n\n*Step Counting (Iterative & Recursive)*")
-        st.success("⚡ **Practical 2**\n\nSorting Algorithms\n\n*Bubble, Insertion, Merge Sort & Time Benchmark*")
-        st.success("🔗 **Practical 3**\n\nSingly Linked List\n\n*Insert, Delete, and Search operations*")
-        st.success("🔄 **Practical 4**\n\nCircular Linked List\n\n*Circular traversal, head/end modifications*")
-
-    with dcol2:
-        st.success("🥞 **Practical 5**\n\nStack & Recursion\n\n*Array, Linked List, Tower of Hanoi & Underflow*")
-        st.success("🔢 **Practical 6**\n\nBalanced Parentheses\n\n*Stack-based expression syntax validator*")
-        st.success("🚶 **Practical 7**\n\nQueue Operations\n\n*List, Circular Queue, Deque & Performance*")
-        st.success("🕸️ **Practical 8**\n\nGraph Traversals\n\n*Adjacency Matrix/List, DFS & BFS*")
-
-    with dcol3:
-        st.success("🗺️ **Practical 9**\n\nDijkstra's Algorithm\n\n*Greedy Single-Source Shortest Path*")
-        st.success("🔍 **Practical 10**\n\nSearching Techniques\n\n*Linear, Binary, Interpolation Search*")
-        st.success("🎄 **Practical 11**\n\nAVL Tree\n\n*Self-Balancing BST, LL/RR Rotations*")
+    st.write("All DAA Practicals (1 to 11) can be accessed from the sidebar navigation.")
 
 
 
 # =========================================================
-# PRACTICAL 4: DATA PREPROCESSING AND CLEANING
+# PRACT 4: CLEANING
 # =========================================================
 
-elif technique == "Practical 4: Data Preprocessing and Cleaning":
+elif technique == "Pract 4: Cleaning":
 
-    st.header("🧹 Practical 04: Data Preprocessing and Cleaning")
+    st.header("🧹 Pract 4: Cleaning")
 
     st.write(
         """
@@ -280,12 +267,12 @@ Processed dataset saved as data/Employee_Analytics_Processed.csv""",
 
 
 # =========================================================
-# PRACTICAL 5: DATA DISCRETIZATION AND VISUALIZATION
+# PRACT 5: VISUALIZATION
 # =========================================================
 
-elif technique == "Practical 5: Data Discretization and Visualization":
+elif technique == "Pract 5: Visualization":
 
-    st.header("📊 Practical 05: Data Discretization and Visualization")
+    st.header("📊 Pract 5: Visualization")
 
     st.write(
         """
@@ -683,9 +670,9 @@ elif technique == "Spatial Mining":
 # DAA PRACTICAL 1: TIME COMPLEXITY (STEP COUNTING METHOD)
 # =========================================================
 
-elif technique == "DAA Practical 1: Time Complexity (Step Counting)":
+elif technique == "Time Complexity (Step Counting)":
 
-    st.header("⏱️ DAA Practical 1: Algorithm Analysis – Time Complexity Calculation")
+    st.header("⏱️ Algorithm Analysis – Time Complexity Calculation")
 
     st.write(
         """
@@ -746,9 +733,9 @@ elif technique == "DAA Practical 1: Time Complexity (Step Counting)":
 # DAA PRACTICAL 2: SORTING ALGORITHMS
 # =========================================================
 
-elif technique == "DAA Practical 2: Sorting Algorithms (Bubble, Insertion, Merge)":
+elif technique == "Sorting Algorithms (Bubble, Insertion, Merge)":
 
-    st.header("⚡ DAA Practical 2: Implementing and Analyzing Sorting Algorithms")
+    st.header("⚡ Implementing and Analyzing Sorting Algorithms")
 
     st.write(
         """
@@ -814,9 +801,9 @@ Merge Time: 0.00192 sec""",
 # DAA PRACTICAL 3: SINGLY LINKED LIST OPERATIONS
 # =========================================================
 
-elif technique == "DAA Practical 3: Singly Linked List Operations":
+elif technique == "Singly Linked List Operations":
 
-    st.header("🔗 DAA Practical 3: Singly Linked List Operations")
+    st.header("🔗 Singly Linked List Operations")
 
     st.write(
         """
@@ -865,9 +852,9 @@ elif technique == "DAA Practical 3: Singly Linked List Operations":
 # DAA PRACTICAL 4: CIRCULAR LINKED LIST OPERATIONS
 # =========================================================
 
-elif technique == "DAA Practical 4: Circular Linked List Operations":
+elif technique == "Circular Linked List Operations":
 
-    st.header("🔄 DAA Practical 4: Circular Linked List Operations")
+    st.header("🔄 Circular Linked List Operations")
 
     st.write(
         """
@@ -916,9 +903,9 @@ elif technique == "DAA Practical 4: Circular Linked List Operations":
 # DAA PRACTICAL 5: STACK & TOWER OF HANOI
 # =========================================================
 
-elif technique == "DAA Practical 5: Stack & Tower of Hanoi":
+elif technique == "Stack & Tower of Hanoi":
 
-    st.header("🥞 DAA Practical 5: Stack Operations & Tower of Hanoi")
+    st.header("🥞 Stack Operations & Tower of Hanoi")
 
     st.write(
         """
@@ -968,9 +955,9 @@ elif technique == "DAA Practical 5: Stack & Tower of Hanoi":
 # DAA PRACTICAL 6: BALANCED PARENTHESES CHECKER
 # =========================================================
 
-elif technique == "DAA Practical 6: Balanced Parentheses Checker":
+elif technique == "Balanced Parentheses Checker":
 
-    st.header("🔢 DAA Practical 6: Balanced Parentheses Checker Using Stack")
+    st.header("🔢 Balanced Parentheses Checker Using Stack")
 
     st.write(
         """
@@ -1023,9 +1010,9 @@ a+b) : Not Balanced""",
 # DAA PRACTICAL 7: QUEUE OPERATIONS
 # =========================================================
 
-elif technique == "DAA Practical 7: Queue Operations (Array, Circular, Deque)":
+elif technique == "Queue Operations (Array, Circular, Deque)":
 
-    st.header("🚶 DAA Practical 7: Queue Using Array and Linked List")
+    st.header("🚶 Queue Using Array and Linked List")
 
     st.write(
         """
@@ -1073,9 +1060,9 @@ elif technique == "DAA Practical 7: Queue Operations (Array, Circular, Deque)":
 # DAA PRACTICAL 8: GRAPH TRAVERSALS (DFS / BFS)
 # =========================================================
 
-elif technique == "DAA Practical 8: Graph Representation & Traversals (DFS/BFS)":
+elif technique == "Graph Representation & Traversals (DFS/BFS)":
 
-    st.header("🕸️ DAA Practical 8: Graph Representation and Traversals (DFS & BFS)")
+    st.header("🕸️ Graph Representation and Traversals (DFS & BFS)")
 
     st.write(
         """
@@ -1130,9 +1117,9 @@ elif technique == "DAA Practical 8: Graph Representation & Traversals (DFS/BFS)"
 # DAA PRACTICAL 9: DIJKSTRA'S SHORTEST PATH
 # =========================================================
 
-elif technique == "DAA Practical 9: Dijkstra's Shortest Path Algorithm":
+elif technique == "Dijkstra's Shortest Path Algorithm":
 
-    st.header("🗺️ DAA Practical 9: Shortest Path Using Dijkstra’s Algorithm")
+    st.header("🗺️ Shortest Path Using Dijkstra’s Algorithm")
 
     st.write(
         """
@@ -1196,9 +1183,9 @@ Shortest Distances: {'A': 0, 'B': 4, 'C': 2, 'D': 3}""",
 # DAA PRACTICAL 10: SEARCHING TECHNIQUES
 # =========================================================
 
-elif technique == "DAA Practical 10: Searching Techniques (Linear, Binary, Interpolation)":
+elif technique == "Searching Techniques (Linear, Binary, Interpolation)":
 
-    st.header("🔍 DAA Practical 10: Searching Techniques")
+    st.header("🔍 Searching Techniques")
 
     st.write(
         """
@@ -1253,9 +1240,9 @@ Interpolation Position: 500 Time: 0.000004 sec""",
 # DAA PRACTICAL 11: AVL TREE IMPLEMENTATION
 # =========================================================
 
-elif technique == "DAA Practical 11: AVL Tree Implementation & Rotations":
+elif technique == "AVL Tree Implementation & Rotations":
 
-    st.header("🎄 DAA Practical 11: AVL Tree Implementation & Rotations")
+    st.header("🎄 AVL Tree Implementation & Rotations")
 
     st.write(
         """
