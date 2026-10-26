@@ -188,9 +188,6 @@ if technique == "Home":
         st.info("🎥 **Multimedia Mining**\n\nMedia Mining\n\n*Concept: Audio/Video Features*")
         st.info("📍 **Spatial Mining**\n\nGeographical Analysis\n\n*Concept: Area Coordinates*")
 
-    st.subheader("⚡ 2. Design & Analysis of Algorithms (DAA) Practicals")
-    st.write("All DAA Practicals (1 to 11) can be accessed from the sidebar navigation.")
-
 
 
 # =========================================================
