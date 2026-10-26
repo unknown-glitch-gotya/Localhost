@@ -669,8 +669,6 @@ elif technique == "Spatial Mining":
 
 elif technique == "Time Complexity (Step Counting)":
 
-    st.header("⏱️ Algorithm Analysis – Time Complexity Calculation")
-
     st.write(
         """
         **Step Counting Method**: In algorithm analysis, the step count method determines
@@ -731,8 +729,6 @@ elif technique == "Time Complexity (Step Counting)":
 # =========================================================
 
 elif technique == "Sorting Algorithms (Bubble, Insertion, Merge)":
-
-    st.header("⚡ Implementing and Analyzing Sorting Algorithms")
 
     st.write(
         """
@@ -800,8 +796,6 @@ Merge Time: 0.00192 sec""",
 
 elif technique == "Singly Linked List Operations":
 
-    st.header("🔗 Singly Linked List Operations")
-
     st.write(
         """
         A Singly Linked List is a linear data structure of dynamically allocated nodes.
@@ -850,8 +844,6 @@ elif technique == "Singly Linked List Operations":
 # =========================================================
 
 elif technique == "Circular Linked List Operations":
-
-    st.header("🔄 Circular Linked List Operations")
 
     st.write(
         """
@@ -902,8 +894,6 @@ elif technique == "Circular Linked List Operations":
 
 elif technique == "Stack & Tower of Hanoi":
 
-    st.header("🥞 Stack Operations & Tower of Hanoi")
-
     st.write(
         """
         A Stack is a Last-In, First-Out (LIFO) data structure.
@@ -953,8 +943,6 @@ elif technique == "Stack & Tower of Hanoi":
 # =========================================================
 
 elif technique == "Balanced Parentheses Checker":
-
-    st.header("🔢 Balanced Parentheses Checker Using Stack")
 
     st.write(
         """
@@ -1009,8 +997,6 @@ a+b) : Not Balanced""",
 
 elif technique == "Queue Operations (Array, Circular, Deque)":
 
-    st.header("🚶 Queue Using Array and Linked List")
-
     st.write(
         """
         A Queue is a First-In, First-Out (FIFO) linear data structure.
@@ -1058,8 +1044,6 @@ elif technique == "Queue Operations (Array, Circular, Deque)":
 # =========================================================
 
 elif technique == "Graph Representation & Traversals (DFS/BFS)":
-
-    st.header("🕸️ Graph Representation and Traversals (DFS & BFS)")
 
     st.write(
         """
@@ -1115,8 +1099,6 @@ elif technique == "Graph Representation & Traversals (DFS/BFS)":
 # =========================================================
 
 elif technique == "Dijkstra's Shortest Path Algorithm":
-
-    st.header("🗺️ Shortest Path Using Dijkstra’s Algorithm")
 
     st.write(
         """
@@ -1182,8 +1164,6 @@ Shortest Distances: {'A': 0, 'B': 4, 'C': 2, 'D': 3}""",
 
 elif technique == "Searching Techniques (Linear, Binary, Interpolation)":
 
-    st.header("🔍 Searching Techniques")
-
     st.write(
         """
         Searching algorithms locate keys within datasets. This practical compares
@@ -1238,8 +1218,6 @@ Interpolation Position: 500 Time: 0.000004 sec""",
 # =========================================================
 
 elif technique == "AVL Tree Implementation & Rotations":
-
-    st.header("🎄 AVL Tree Implementation & Rotations")
 
     st.write(
         """
